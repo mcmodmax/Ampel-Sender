@@ -15,15 +15,11 @@ radio.onReceivedNumber(function (receivedNumber) {
  */
 input.onButtonPressed(Button.A, function () {
     if (Ampel == 2) {
-        radio.sendNumber(98765)
-        Ampel = 1
         radio.sendNumber(93847)
     }
 })
 input.onButtonPressed(Button.B, function () {
     if (Ampel == 1) {
-        radio.sendNumber(46123)
-        Ampel = 2
         radio.sendNumber(66453)
     }
 })
